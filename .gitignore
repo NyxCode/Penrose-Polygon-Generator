@@ -1,0 +1,7 @@
+.idea/
+target/
+node_modules/
+/impossible-polygon-wasm/bin/
+/impossible-polygon-wasm/dist/
+/impossible-polygon-wasm/pkg/
+/impossible-polygon/image.svg

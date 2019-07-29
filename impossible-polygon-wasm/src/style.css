@@ -1,0 +1,91 @@
+body {
+    touch-action: none;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.controls {
+    display: block;
+    margin: 3vh auto auto !important;
+    width: 90%;
+    padding-bottom: 0 !important;
+}
+
+.shrink-label {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    color: rgba(0, 0, 0, .6) !important;
+}
+
+.compact-slider {
+    padding-top: 0.5em !important;
+}
+
+#debug-checkbox {
+    padding-top: 1em;
+}
+
+#download-button {
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 500px) {
+    .controls {
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .controls {
+        width: 30%;
+    }
+}
+
+#output > svg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+    #output > svg  {
+        padding-top: 1em;
+        width: 80vw;
+    }
+    @media screen and (min-height: 700px) {
+        #output > svg  {
+            padding-top: 2em;
+        }
+    }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+    #output > svg  {
+        padding-top: 2vw;
+        height: 50vh;
+    }
+}
+
+#color-picker-container {
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 240px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+    top: 20%;
+    right: 0;
+    left: 0;
+}

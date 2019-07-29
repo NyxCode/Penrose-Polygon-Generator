@@ -1,0 +1,18 @@
+[package]
+name = "impossible-polygon-wasm"
+version = "0.1.0"
+authors = ["NyxCode <moritz.bischof1@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+name = "impossible_polygon_wasm"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+impossible-polygon = { path = "../impossible-polygon" }
+
+[dependencies.wasm-bindgen]
+version = "0.2.48"
+features = ["serde-serialize"]
