@@ -5,14 +5,14 @@
   },
   "devDependencies": {
     "@wasm-tool/wasm-pack-plugin": "0.4.2",
-    "copy-webpack-plugin": "^5.0.4",
+    "copy-webpack-plugin": "^5.1.1",
     "html-webpack-plugin": "^3.2.0",
     "text-encoding": "^0.7.0",
-    "webpack": "^4.29.4",
-    "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.0"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@jaames/iro": "^4.5.1"
+    "@jaames/iro": "^4.5.3"
   }
 }
